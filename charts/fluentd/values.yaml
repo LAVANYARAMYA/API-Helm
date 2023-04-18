@@ -383,5 +383,6 @@ fileConfigs:
         path ""
         user elastic
         password changeme
+        logstash_format true
       </match>
     </label>
