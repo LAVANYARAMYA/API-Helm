@@ -15,8 +15,7 @@ roles:
   remote_cluster_client: "true"
   ml: "true"
 
-replicas: 3
-minimumMasterNodes: 2
+replicas: 1
 
 esMajorVersion: ""
 
@@ -79,11 +78,11 @@ esJavaOpts: "" # example: "-Xmx1g -Xms1g"
 
 resources:
   requests:
-    cpu: "1000m"
-    memory: "2Gi"
+    cpu: "500m"
+    memory: "1Gi"
   limits:
-    cpu: "1000m"
-    memory: "2Gi"
+    cpu: "500m"
+    memory: "1Gi"
 
 initResources:
   {}
@@ -100,7 +99,7 @@ volumeClaimTemplate:
   accessModes: ["ReadWriteOnce"]
   resources:
     requests:
-      storage: 30Gi
+      storage: 1Gi
 
 rbac:
   create: false
