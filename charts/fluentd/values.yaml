@@ -384,5 +384,7 @@ fileConfigs:
         user elastic
         password changeme
         logstash_format true
+        include_tag_key true
+        tag_key kubernetes.labels.app
       </match>
     </label>
